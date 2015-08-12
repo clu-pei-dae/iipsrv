@@ -212,7 +212,7 @@ class ROT : public Task {
 /// FIF Command
 class FIF : public Task {
  public:
-  void run( Session* session, const std::string& argument );
+  void run( Session* session, const std::string& argument, bool is_decoded = false );
 };
 
 
