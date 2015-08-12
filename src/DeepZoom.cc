@@ -68,7 +68,7 @@ void DeepZoom::run( Session* session, const std::string& argument ){
 
   // As we don't have an independent FIF request, we need to run it now
   FIF fif;
-  fif.run( session, prefix );
+  fif.run( session, prefix, false );
 
 
   // Get the full image size and the total number of resolutions available
