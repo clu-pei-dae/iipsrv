@@ -116,6 +116,9 @@ inline std::string URL::decode() {
     return argument;
 }
 
+inline std::string URL::url() {
+    return url;
+}
 
 // Escape strings for JSON etc.
 inline std::string URL::escape() {
