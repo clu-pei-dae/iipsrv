@@ -125,7 +125,7 @@ void IIIF::run( Session* session, const string& src ){
 
   // Check whether requested image exists
   FIF fif;
-  fif.run( session, src );
+  fif.run( session, filename, true );
 
   // Reload our filename
   filename = (*session->image)->getImagePath();
