@@ -46,6 +46,7 @@ void FIF::run(Session *session, const string &src, bool is_decoded = false) {
 
     // Decode any URL-encoded characters from our path
     URL url(src);
+
     if (!is_decoded) {
         argument = url.decode();
     }

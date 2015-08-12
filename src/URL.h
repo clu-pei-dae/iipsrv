@@ -54,9 +54,6 @@ public:
     /// String escaping for JSON etc
     std::string escape();
 
-    /// Just the url
-    std::string url();
-
     /// Return any warning message
     std::string warning() { return warning_message; };
 
@@ -114,10 +111,6 @@ inline std::string URL::decode() {
     }
 
     return argument;
-}
-
-inline std::string URL::url() {
-    return url;
 }
 
 // Escape strings for JSON etc.
