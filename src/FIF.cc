@@ -42,11 +42,15 @@ void FIF::run(Session *session, const string &src, bool is_decoded = false) {
     // Time this command
     if (session->loglevel >= 2) command_timer.start();
 
+    string argument;
 
     // Decode any URL-encoded characters from our path
     URL url(src);
     if (!is_decoded) {
-        string argument = url.decode();
+        argument = url.decode();
+    }
+    else {
+        argument = src;
     }
 
 
